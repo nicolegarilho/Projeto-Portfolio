@@ -1,0 +1,424 @@
+/* ------------------------------ Geral ------------------------------- */
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* ------------------------------ Sobre Mim ----------------------- */
+.sobre-mim {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente o contêiner */
+    justify-content: center; /* Centraliza verticalmente se necessário */
+    padding: 2rem;
+    background-color: #191112; /* Cor de fundo para diferenciar */
+    text-align: center; /* Define o texto padrão como centralizado */
+}
+
+.sobre-mim__conteudo {
+    max-width: 800px; /* Define uma largura máxima para o conteúdo */
+    width: 100%; /* Faz o conteúdo ocupar toda a largura disponível */
+    color: #54525B;
+    
+}
+
+.sobre-mim h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #E5E2DE;
+    text-align: center; /* Garante que o título fique centralizado */
+}
+
+.sobre-mim p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #E5E2DE;
+    text-align: left; /* Alinha os parágrafos à esquerda */
+    margin-bottom: 1rem;
+}
+
+
+
+/* ------------------------------ Menu ------------------------------- */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #191112;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cabecalho__logo {
+    max-width: 50px;
+}
+
+.cabecalho__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #B64419;
+}
+
+.navegacao__lista {
+    display: flex;
+    gap: 1.5rem;
+    color: #E5E2DE;
+}
+
+.navegacao__elemento a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Apresentação ----------------------- */
+.apresentacao {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 2rem; /* Espaço entre os elementos */
+    padding: 2rem;
+    background-color:#B9A79B;
+    text-align: left; /* Alinha os textos à esquerda */
+
+}
+
+.apresentacao__conteiner {
+    max-width: 600px; /* Largura máxima para o texto */
+    flex: 1; /* Faz o texto ocupar o espaço necessário */
+}
+
+.apresentacao__foto {
+    width: 250px; /* Tamanho da imagem */
+    height: 250px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover;
+    flex-shrink: 0; /* Garante que a imagem não diminua */
+}
+
+.apresentacao__titulo {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: #191112;
+}
+
+.apresentacao__subtitulo {
+    font-size: 15px;
+    color: #191112;
+    margin-bottom: 1.5rem;
+}
+
+.nomes_redes{
+    color: #191112;
+}
+
+.redes {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.redes__elemento {
+    color: #B64419;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* ------------------------------ Habilidades ------------------------- */
+.habilidades {
+    padding: 2rem;
+    background-color: #B9A79B; /* Cor de fundo da seção */
+}
+
+.habilidades__titulo {
+    font-size: 25px;
+    margin-bottom: 2rem;
+    color: #191112; /* Cor do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.habilidades__lista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    gap: 1.5rem; /* Espaçamento entre os elementos */
+    justify-content: center; /* Centraliza os elementos na horizontal */
+    align-items: center; /* Centraliza os elementos na vertical */
+    padding: 0;
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column; /* Organiza os ícones e textos em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 0.5rem; /* Espaço entre o ícone e o texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem;
+    background-color: #ffffff; /* Fundo branco para destacar os itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+    width: 120px; /* Define a largura de cada item */
+    height: 140px; /* Define a altura de cada item */
+}
+
+.habilidades__icone {
+    width: 50px; /* Tamanho dos ícones */
+    height: auto; /* Mantém a proporção dos ícones */
+}
+
+.habilidades__nome {
+    font-size: 1rem;
+    color: #333; /* Cor do texto */
+    margin: 0;
+}
+
+
+/* ------------------------------ Hobbies ----------------------------- */
+.hobbies {
+    padding: 2rem;
+    background-color: #B9A79B;
+}
+
+.hobbies__lista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    gap: 1.5rem; /* Espaçamento entre os elementos */
+    justify-content: center; /* Centraliza os elementos na horizontal */
+    align-items: center; /* Centraliza os elementos na vertical */
+    padding: 0;
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.hobbies__elemento {
+    display: flex;
+    flex-direction: column; /* Organiza os ícones e textos em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 0.5rem; /* Espaço entre o ícone e o texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem;
+    background-color: #ffffff; /* Fundo branco para destacar os itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+    width: 120px; /* Define a largura de cada item */
+    height: 140px; /* Define a altura de cada item */
+}
+
+.hobbies__icone {
+    width: 50px;
+    height: auto; /* Mantém a proporção dos ícones */
+}
+
+.hobbies__nome {
+    font-size: 15px;
+    color: #191112; /* Cor do texto */
+    margin: 0;
+}
+
+/* ------------------------------ Formação Acadêmica ------------------ */
+.formacao {
+    padding: 3rem 1.5rem;
+    background-color: #191112; /* Fundo Preto */
+    text-align: center;
+}
+
+.formacao__titulo {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formacao__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.formacao__elemento {
+    display: flex;
+    align-items: center; /* Alinha o ícone e texto verticalmente */
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 320px; /* Largura fixa */
+    text-align: left;
+}
+
+.formacao__icone {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.formacao__nome {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #191112;
+    margin: 0;
+}
+
+.formacao__detalhe {
+    font-size: 1rem;
+    color: #54525B;
+    margin: 0;
+}
+
+/* Estilo para a seção de Experiência Profissional */
+.experiencia {
+    background-color: #B9A79B; /* Fundo claro */
+    padding: 2rem 1rem; /* Espaçamento interno */
+}
+
+.experiencia__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #191112;
+}
+
+/* Estilo da caixa de experiência */
+.experiencia__item {
+    background-color: #B9A79B; /* Fundo branco */
+    border: 1px solid #B9A79B; /* Borda sutil */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animação */
+}
+
+.experiencia__item:hover {
+    transform: translateY(-5px); /* Eleva a caixa ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+}
+
+/* Nome da experiência */
+.experiencia__nome {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #191112; /* preto destaque */
+    margin-bottom: 0.8rem;
+}
+
+/* Descrição da experiência */
+.experiencia__descricao {
+    font-size: 1rem;
+    color: #191112;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Lista de habilidades */
+.experiencia__habilidades {
+    list-style: none; /* Remove marcadores */
+    padding: 0;
+    display: flex; /* Alinha horizontalmente */
+    flex-wrap: wrap; /* Quebra linha se necessário */
+    gap: 0.5rem; /* Espaçamento entre itens */
+    margin-bottom: 1rem;
+}
+
+.experiencia__habilidades li {
+    background-color: #B64419; /* Fundo laranja */
+    color: #fff; /* Texto branco */
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px; /* Cantos arredondados */
+    font-size: 0.9rem;
+}
+
+/* Botões */
+.experiencia__botoes {
+    display: flex;
+    gap: 1rem; /* Espaço entre os botões */
+}
+
+.experiencia__botao {
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333; /* cinza padrão */
+    transition: background-color 0.2s; /* Animação de cor */
+}
+
+.experiencia__botao:hover {
+    background-color: #191112; /* preto no hover */
+}
+
+.experiencia__botao--demo {
+    background-color: #28a745; /* Verde para projetos */
+}
+
+.experiencia__botao--demo:hover {
+    background-color: #1e7e34; /* Verde mais escuro no hover */
+}
+
+
+
+/* ------------------------------ Contato ----------------------------- */
+.contato {
+    background-color: #191112;
+    
+}
+
+.contato__titulo {
+    color: #E5E2DE;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contato__campo {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contato__botao {
+    background-color: #B9A79B;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.contato__botao:hover {
+    background-color: #B64419;
+   
+}
